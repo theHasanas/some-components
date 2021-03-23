@@ -69,7 +69,7 @@ const Modal = ({ children, title, visible, hideModal, footer }) => {
 
         <Content>{children}</Content>
 
-        <Footer>{footer}</Footer>
+        {footer ? <Footer>{footer}</Footer> : null}
       </Wrapper>
     </Blur>
   );
